@@ -9,6 +9,10 @@ public class LinkedList<T> {
         size = 0;
     }
 
+    public void randomChange() {
+        
+    }
+
     public LinkedList(T data) {
         head = tail = new Node<>(data);
         size = 1;
@@ -21,7 +25,7 @@ public class LinkedList<T> {
 
         /* Iterate through each item in the list and add it.   */
         for (T item : list) {
-            if(size==0) {   /* If we are at the beginning, initialize the head. */
+            if (size == 0) {   /* If we are at the beginning, initialize the head. */
                 head = new Node<>(item);
                 curr = head;
             } else {    /* If we are in the middle or at the end of the list, simply append to the current pointer. */
