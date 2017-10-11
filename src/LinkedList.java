@@ -9,10 +9,6 @@ public class LinkedList<T> {
         size = 0;
     }
 
-    public void randomChange() {
-        
-    }
-
     public LinkedList(T data) {
         head = tail = new Node<>(data);
         size = 1;
